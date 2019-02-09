@@ -2886,10 +2886,6 @@ section.inverse {
   color: #fff;
 }
 
-.hidden {
-  display: none;
-}
-
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.4;
   text-transform: uppercase;
@@ -2976,18 +2972,18 @@ ol, ul, li {
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   width: 100%;
-  background-color: #fff;
+  background-color: #c59a6d;
 }
 
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-  background-color: #cccccc;
+  background-color: #92673a;
 }
 
 header .header-top {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #c69b6e;
+  background-color: #31302f;
   opacity: .9;
   z-index: 2;
 }
@@ -3008,6 +3004,10 @@ header .header-top .header-menu li {
 header .header-top .header-menu li.current {
   border: 1px solid #fff;
   padding: 5px 15px;
+}
+
+header .header-top .header-menu li.current a {
+  color: #c59a6d;
 }
 
 header .header-top .header-menu li a {
@@ -3042,7 +3042,7 @@ header .header-welcome .h1:before {
   width: 40%;
   top: 48%;
   left: 30%;
-  border-top: 5px solid #fff;
+  border-top: 5px solid #c59a6d;
 }
 
 header .header-welcome p {
@@ -3066,7 +3066,7 @@ header .header-bottom a {
 }
 
 header .header-bottom a .fas {
-  color: #fff;
+  color: #c59a6d;
   font-size: 2em;
   line-height: 40px;
 }
@@ -3076,9 +3076,9 @@ header .header-bottom a .fas {
   padding: 10px 0;
 }
 
-.logo svg {
+.logo img {
   width: 102px;
-  height: 32px;
+  height: auto;
 }
 
 .section-owerlay:before {
@@ -3088,7 +3088,7 @@ header .header-bottom a .fas {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #c69b6e;
+  background-color: #31302f;
   opacity: 0.9;
 }
 
@@ -3096,7 +3096,7 @@ header .header-bottom a .fas {
   content: '';
   position: absolute;
   width: 170px;
-  border-bottom: 1px solid #7f7e7e;
+  border-bottom: 1px solid #ccc;
   display: block;
   bottom: 0;
   left: 50%;
@@ -3132,13 +3132,8 @@ header .header-bottom a .fas {
   color: #c59a6d;
 }
 
-.s-about, .team, .services, .prices, .testimonials, .clients, .contacts, .copyright {
-  background-color: #31302f;
-  color: #fff;
-}
-
 .progress-item {
-  border: 1px solid #7f7e7e;
+  border: 1px solid #ccc;
   max-width: 400px;
   padding: 25px 30px 25px 105px;
   position: relative;
@@ -3150,7 +3145,7 @@ header .header-bottom a .fas {
   font-size: 2em;
   top: 30px;
   left: 25px;
-  border: 1px solid #7f7e7e;
+  border: 1px solid #ccc;
   width: 70px;
   height: 70px;
   text-align: center;
@@ -3180,7 +3175,7 @@ header .header-bottom a .fas {
   bottom: -100px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #7f7e7e;
+  border-bottom: 1px solid #ccc;
 }
 
 .s-progress li:nth-child(2n) > div {
@@ -3197,7 +3192,7 @@ header .header-bottom a .fas {
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
-  border-right: 4px solid #464544;
+  border-right: 4px solid #ccc;
 }
 
 .s-progress-button_line span {
@@ -3348,6 +3343,7 @@ header .header-bottom a .fas {
 }
 
 .services-items .services-item {
+  color: #c59a6d;
   text-align: center;
   font-size: 18px;
   padding: 0 2%;
@@ -3357,7 +3353,7 @@ header .header-bottom a .fas {
   width: 130px;
   height: 130px;
   margin: 0 auto;
-  border: 1px solid #7f7e7e;
+  border: 1px solid #ccc;
   font-size: 56px;
   line-height: 130px;
   margin-bottom: 35px;
@@ -3365,6 +3361,10 @@ header .header-bottom a .fas {
 
 .services-items .services-item .item-title {
   margin-bottom: 27px;
+}
+
+.services-items .services-item p {
+  color: #1a1918;
 }
 
 .prices .prices-items .prices-item {
@@ -3413,11 +3413,6 @@ header .header-bottom a .fas {
   padding: 50px 20px;
   margin-bottom: 28px;
   position: relative;
-  z-index: 1;
-  color: #1a1918;
-  -webkit-transition: color 1500ms ease;
-  -o-transition: color 1500ms ease;
-  transition: color 1500ms ease;
 }
 
 .prices-item-content:before {
@@ -3441,16 +3436,12 @@ header .header-bottom a .fas {
   right: 0;
   top: 0;
   bottom: 0;
-  outline: 1px solid #7f7e7e;
+  outline: 1px solid #ccc;
   outline-offset: -2px;
   -webkit-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
   z-index: -2;
-}
-
-.prices-item-content:hover {
-  color: #fff;
 }
 
 .prices-item-content:hover:before {
@@ -3533,7 +3524,7 @@ header .header-bottom a .fas {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: #262626;
 }
 
 .testimonials-slider .testimonial-slider__item .testimonial__status span:first-child:before {
@@ -3587,7 +3578,7 @@ header .header-bottom a .fas {
 }
 
 .facts-item__info__description {
-  color: #1a1918;
+  color: #c59a6d;
 }
 
 .contacts input, .contacts textarea {
@@ -3596,7 +3587,7 @@ header .header-bottom a .fas {
   line-height: 1.4;
   padding: 14px 16px;
   border: 1px solid #ccc;
-  background-color: #373634;
+  background-color: #f6f6f6;
 }
 
 .contacts input::-webkit-input-placeholder, .contacts textarea::-webkit-input-placeholder {
@@ -3666,7 +3657,7 @@ header .header-bottom a .fas {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
-  color: #1a1918;
+  color: #c59a6d;
   display: block;
   margin-bottom: 20px;
 }
@@ -3691,6 +3682,7 @@ header .header-bottom a .fas {
 }
 
 .copyright {
+  color: #1a1918;
   padding: 50px 0 45px;
 }
 
@@ -3710,7 +3702,7 @@ header .header-bottom a .fas {
 }
 
 .copyright .socials a:hover {
-  color: #92673a;
+  color: #6e4d2c;
 }
 
 /*==========  Desktop First  ==========*/
@@ -3757,7 +3749,7 @@ header .header-bottom a .fas {
     border: 1px solid #c59a6d;
     border-top: none;
     float: none;
-    background-color: #c69b6e;
+    background-color: #31302f;
     -webkit-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
